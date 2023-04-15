@@ -1,0 +1,22 @@
+Http 1.1 vs Http 2 difference
+
+http - Hypertext Transfer Protocol. 
+HTTP (Hypertext Transfer Protocol) is the fundamental protocol
+used for communication between web browsers and web servers.
+
+HTTP 1.1                        HTTP 2
+* It works on the textual       * It works on the binary protocol.  
+  format.                        
+
+* There is head of line         * It allows multiplexing so one TCP
+  blocking that blocks all        connection is required for multiple
+  the requests behind it          requests.
+  until it doesn’t get its 
+  all resources.
+
+* It uses requests resource     * It uses PUSH frame by server that
+  Inlining for use getting        collects all multiple pages 
+  multiple pages                  
+
+* It compresses data by         * It uses HPACK for data
+  itself.                         compression.
